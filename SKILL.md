@@ -155,10 +155,10 @@ Ask which video model first, then write Paste prompts in that model's style, the
 
 ## Worked example
 
-- **Test production file**: `workspace/user/files/最后一盏灯_拍摄文件.md` (12 shots, 60 seconds, no dialogue; theme "光不是越亮越好——关掉刺眼的灯，才能看见萤火虫的光"). Read it to see the nine sections, the @asset Paste prompts with Chinese translations, the rich character boards, and the six-panel storyboards.
-- **Script example**: `workspace/user/files/Muse.md` (《它举起爪子的那一秒》, 8 shots, about 65–70 seconds, vertical 9:16, no dialogue).
-- **Storyboard example**: `workspace/user/files/muse_storyboard/shot_01.png` … `shot_08.png`.
-- **Character design example**: the girl's and monster's rich 16:9 comprehensive sheets, scale chart, scene images, and prop sheet under `workspace/imagine_media/` for 《最后一盏灯》.
+- **Test production file**: `examples/最后一盏灯_拍摄文件.md` (12 shots, 60 seconds, no dialogue; theme "光不是越亮越好——关掉刺眼的灯，才能看见萤火虫的光"). Read it to see the nine sections, the @asset Paste prompts with Chinese translations, the rich character boards, and the six-panel storyboards.
+- **Script example** (not distributed with this package — do not go looking for it): 《它举起爪子的那一秒》 (`Muse.md`, 8 shots, about 65–70 seconds, vertical 9:16, no dialogue).
+- **Storyboard example** (not distributed with this package — do not go looking for it): `muse_storyboard/shot_01.png` … `shot_08.png`.
+- **Character design example** (not distributed with this package — do not go looking for it): the girl's and monster's rich 16:9 comprehensive sheets, scale chart, scene images, and prop sheet for 《最后一盏灯》.
 
 ## Animation vs AI live-action — key differences
 
