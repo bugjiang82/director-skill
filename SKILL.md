@@ -1,3 +1,8 @@
+---
+name: director-skill
+description: Input a story or topic and output one complete shoot-ready file for Pixar-style animation or AI-generated photorealistic live-action, with character design sheets, scene and prop references, shot lists with @asset Paste prompts, transition and edit tables, six-panel storyboards, and a QC checklist.
+---
+
 # Director Skill: Input Story → Output Complete Shoot-Ready File
 
 ## This skill is an executor spec, not a guide
