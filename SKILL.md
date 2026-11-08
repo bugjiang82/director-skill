@@ -92,6 +92,7 @@ Every shot lists number, duration, picture, action, expression, camera, sound, a
 8. A clip with a broken face or a changed scene gets regenerated directly, never left for editing (generate several times and pick, or change the prompt if nothing picks; never force a bad clip).
 9. Direction and eyeline must not break (180° rule, eyeline match, a character walking left must not walk right in the next shot).
 10. Verify duration by counting video-stream frames, not container duration.
+11. Script before images: never generate any image before the user has seen the complete script text and chosen to proceed to images.
 
 ## Judgement calls (you decide, by this method)
 
@@ -104,6 +105,8 @@ Every shot lists number, duration, picture, action, expression, camera, sound, a
 
 ## Feedback and iteration
 
+- **Script first, images second — this order is not negotiable.** Write the complete script content (all text: theme, synopsis, character briefs, scene descriptions, shot list, transition table, edit table) and show it to the user BEFORE generating any image. Never generate a character sheet, scene image, or storyboard image before the user has seen the complete script text. Images come after the script is approved, never before.
+- **The script feedback node is a hard gate with a two-choice question.** After showing the complete script, ask the user: "Generate the images now, or do you have changes to the script?" The user picks one: (a) generate images — proceed to character design and storyboards; (b) changes — revise the script, show the revised script again, and ask the same question again. Do not generate images until the user picks (a). Do not show the detailed script content only after the images are done.
 - **Feedback nodes (★)**: after the script, after the storyboard, and after character design, show the work to the user and revise until it is approved before moving on. Never skip a feedback node to save time.
 - **Each feedback round**: hand over the work plus three concrete questions (for example "Is this theme sentence right?", "Does this shot read clearly?", "Is this face recognizable from another angle?").
 - **When feedback comes back**: restate your understanding ("You mean…, I'll change it to…, right?") and confirm before revising. When the user only says "so-so" or "no" with no detail, ask one question ("Which part is off: the story, the face, or the shots?"). Never guess and revise.
@@ -136,8 +139,8 @@ Ask which video model first, then write Paste prompts in that model's style, the
 
 ## Step lists (opening interactive prompt)
 
-- **Animation**: theme → script ★ → storyboard ★ → character design ★ → visual development and color script → layout → performance direction → animation → lighting → sound → editing.
-- **AI live-action**: theme → script ★ → storyboard ★ → character design ★ → scene design → blocking → camera design → performance prompts → generation → sound → editing.
+- **Animation**: theme → script ★ (show full script, ask: images or changes?) → storyboard ★ → character design ★ → visual development and color script → layout → performance direction → animation → lighting → sound → editing.
+- **AI live-action**: theme → script ★ (show full script, ask: images or changes?) → storyboard ★ → character design ★ → scene design → blocking → camera design → performance prompts → generation → sound → editing.
 - (★ marks the feedback nodes.)
 
 ## QC checklist (all checked before delivery)
